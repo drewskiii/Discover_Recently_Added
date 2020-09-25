@@ -2,7 +2,9 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pprint
 import json
+import time
 from datetime import date
+from datetime import timedelta
 '''
 Note:
     - set env vars
@@ -15,9 +17,18 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
 
 UPDATING_PLAYLIST_ID = "7GiHp1v1WFgqhQrkTh9L6M" # ones u may like 😊
+DAYS_IN_WEEK = 7
 
-def parse_date(date):
-    if date:
+def parse_date(track_date):
+    if track_date:
+        year = int(track_date[:4])
+        mth = int(track_date[5:7])
+        day = int(track_date[8:10])
+        # print(year, mth, day)
+        date_obj = date(year, mth, day)
+        return date_obj
+    else:
+        return None
 
 
 def get_my_playlists():
@@ -39,7 +50,17 @@ def get_songs(p_id):
                                offset=offset
                                )['items']
     # print(tracks[-1])
-    # if tracks[-1]
+    if tracks:
+        last_track = tracks[-1]
+        days = timedelta(DAYS_IN_WEEK)
+        #  parse_date(last_track['added_at'])
+        last_week = date.today() - days
+        print(last_week)
+        if parse_date(last_track['added_at']) >= last_week and parse_date(last_track['added_at']) <= date.today():
+            print("HI")
+        print('hello')
+        
+
 
 def selected_songs(playlist_ids):
     song_ids = []
