@@ -1,5 +1,5 @@
-# Spotify Playlist Updater
-> Updates playlist for followers to view user's recently added tracks
+# Discover Recently Added
+> Updates playlist for followers to view user's recently added tracks from the past week
 
 <!-- 
 [![NPM Version][npm-image]][npm-url]
