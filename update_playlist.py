@@ -9,14 +9,23 @@ from datetime import timedelta
 Note:
     - set env vars
     - set redirect_uri to be same as in app in settings (online)
+
+playlist_upload_cover_image(playlist_id, image_b64) => Replace the image used to represent a specific playlist
+playlist_add_items(playlist_id, items, position=None) => 
+        Parameters:
+        playlist_id - the id of the playlist
+        items - a list of track/episode URIs, URLs or IDs
+        position - the position to add the tracks
+
+playlist_change_details(playlist_id, name=None, public=None, collaborative=None, description=None)
+playlist_remove_all_occurrences_of_items(playlist_id, items, snapshot_id=None)
+playlist_replace_items(playlist_id, items)
+
 '''
-# playlist-read-collaborative
-scope = 'playlist-modify-public playlist-modify-private playlist-read-private'
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
-
-
-UPDATING_PLAYLIST_ID = "7GiHp1v1WFgqhQrkTh9L6M" # ones u may like 😊
+SCOPE = 'playlist-modify-public playlist-modify-private playlist-read-private'
+# UPDATING_PLAYLIST_ID = "7GiHp1v1WFgqhQrkTh9L6M" # ones u may like 😊
+UPDATING_PLAYLIST_ID = "1nmo7AthZ0K8vZIhA4j1Rv" # test
 DAYS_IN_WEEK = 7
 
 def parse_date(track_date):
