@@ -47,6 +47,8 @@ _Note, for first time run, spotify browser will pop up asking for permission to 
 
 Created by Andrew Lor
 
+[Buy me a coffee][coffee]
+
 Lorandrewed@gmail.com
 
 [drewskiii](https://github.com/drewskiii/)
@@ -55,4 +57,4 @@ Lorandrewed@gmail.com
 <!-- Markdown link & img dfn's -->
 [spotipy]: https://github.com/drewskiii/Discover_Recently_Added.git
 [reference]: https://help.pythonanywhere.com/pages/environment-variables-for-web-apps/
-
+[coffee]: https://www.buymeacoffee.com/andrewlor
