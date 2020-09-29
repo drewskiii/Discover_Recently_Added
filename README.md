@@ -18,12 +18,12 @@ a fun way to connect with your followers and to seek songs they've interacted wi
 ```
     python3 -m venv venv
 ```
-3) Follow the steps in [Spotipy Library quickstart][spotipy] to set up .env file for env vars.
-4) OPTIONAL: Add to your virtual env activate script to automatically export env vars when starting up virtual environment. [Reference this to do it][reference]
-5) Start your virtual environment:
+3) Start your virtual environment:
 ```
     source venv/bin/activate
 ```
+4) Follow the steps in [Spotipy Library quickstart][spotipy] to set up .env file for env vars.
+5) OPTIONAL: Add to your virtual env activate script to automatically export env vars when starting up virtual environment. [Reference this to do it][reference]
 6) pip install dependencies:
 ```
     pip install -r requirements.txt
