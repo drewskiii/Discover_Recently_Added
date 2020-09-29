@@ -33,6 +33,10 @@ a fun way to connect with your followers and to seek songs they've interacted wi
 ```
     ./run.sh
 ```
+9) Deactivate virtual environment:
+```
+    deactivate
+```
 _Note, for first time run, spotify browser will pop up asking for permission to make changes to your account_
 
 
