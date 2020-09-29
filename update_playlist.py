@@ -24,8 +24,7 @@ playlist_replace_items(playlist_id, items)
 '''
 
 SCOPE = 'playlist-modify-public playlist-modify-private playlist-read-private'
-# UPDATING_PLAYLIST_ID = "7GiHp1v1WFgqhQrkTh9L6M" # ones u may like 😊
-UPDATING_PLAYLIST_ID = "1nmo7AthZ0K8vZIhA4j1Rv" # test
+UPDATING_PLAYLIST_ID = "enter_playlist_id_here"
 DAYS_IN_WEEK = 7
 
 
