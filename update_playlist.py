@@ -20,6 +20,7 @@ playlist_add_items(playlist_id, items, position=None) =>
 playlist_change_details(playlist_id, name=None, public=None, collaborative=None, description=None)
 playlist_remove_all_occurrences_of_items(playlist_id, items, snapshot_id=None)
 playlist_replace_items(playlist_id, items)
+Reference api functions here: https://spotipy.readthedocs.io/en/2.16.0/#api-reference
 
 '''
 
