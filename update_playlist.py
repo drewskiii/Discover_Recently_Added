@@ -50,7 +50,7 @@ class DiscoverRecentlyAdded:
         for playlist in all_playlists['items']:
             if playlist['owner']['display_name'] == 'drewskiii' and not playlist['collaborative'] and playlist['id'] != UPDATING_PLAYLIST_ID:
                 my_playlists.append(playlist['id'])
-                # print(playlist['id'], playlist['name'])
+                
 
         return my_playlists
 
@@ -94,11 +94,10 @@ class DiscoverRecentlyAdded:
         self.sp.playlist_replace_items(UPDATING_PLAYLIST_ID, list(self.song_collection.keys()))
 
 
-
 def main():
-    prog = DiscoverRecentlyAdded()
     try:
-        prog.update_playlist()
+        recent_added_obj = DiscoverRecentlyAdded()
+        recent_added_obj.update_playlist()
     except:
         print("There was a problem")
         raise
