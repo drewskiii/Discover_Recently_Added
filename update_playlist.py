@@ -9,19 +9,6 @@ from datetime import timedelta
 Note:
     - set env vars
     - set redirect_uri to be same as in app in settings (online)
-
-playlist_upload_cover_image(playlist_id, image_b64) => Replace the image used to represent a specific playlist
-playlist_add_items(playlist_id, items, position=None) => 
-        Parameters:
-        playlist_id - the id of the playlist
-        items - a list of track/episode URIs, URLs or IDs
-        position - the position to add the tracks
-
-playlist_change_details(playlist_id, name=None, public=None, collaborative=None, description=None)
-playlist_remove_all_occurrences_of_items(playlist_id, items, snapshot_id=None)
-playlist_replace_items(playlist_id, items)
-Reference api functions here: https://spotipy.readthedocs.io/en/2.16.0/#api-reference
-
 '''
 
 SCOPE = 'playlist-modify-public playlist-modify-private playlist-read-private'
