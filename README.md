@@ -8,36 +8,47 @@ a fun way to connect with your followers and to seek songs they've interacted wi
 
 ![](header.png)
 
-## Installation
+## Installation & Usage Example
+1) Clone this repo and cd into it:
+```
+    git clone https://github.com/drewskiii/Discover_Recently_Added.git
+    cd Discover_Recently_Added
+```
+2) Create a virtual environment:
+```
+    python3 -m venv venv
+```
+3) Follow the steps in [Spotipy Library quickstart][spotipy] to set up .env file for env vars.
+4) OPTIONAL: Add to your virtual env activate script to automatically export env vars when starting up virtual environment. [Reference this to do it][reference]
+5) Start your virtual environment:
+```
+    source venv/bin/activate
+```
+6) pip install dependencies:
+```
+    pip install -r requirements.txt
+```
+7) Change UPDATING_PLAYLIST_ID in python script to match the target playlist id/URI you desire to update
+8) Finally run the bash script! 
+```
+    ./run.sh
+```
+_Note, for first time run, spotify browser will pop up asking for permission to make changes to your account_
 
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
 ## Release History
 
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Created by Andrew Lor
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Lorandrewed@gmail.com
 
-[https://github.com/yourname/github-link](https://github.com/drewskiii/)
+[drewskiii](https://github.com/drewskiii/)
 
 
 <!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
-
+[spotipy]: https://github.com/drewskiii/Discover_Recently_Added.git
+[reference]: https://help.pythonanywhere.com/pages/environment-variables-for-web-apps/
 
