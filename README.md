@@ -1,15 +1,10 @@
 # Discover Recently Added
 > Updates playlist for followers to view user's recently added tracks from the past week
 
-<!-- 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
--->
-
-This application compiles tracks that the user added to their playlists and 
-updates/replaces the terminal playlist with the compiled tracks
-for followers to listen in to what the user has newly added to their playlists.
+This application compiles tracks the user added to their playlists from the past week and 
+replaces the tracks from the selected playlist with the compiled tracks
+for followers to listen in to what the user has newly added to their playlists. This is 
+a fun way to connect with your followers and to seek songs they've interacted with, recently discovered, and even find new gems they found!
 
 ![](header.png)
 
