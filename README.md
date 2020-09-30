@@ -29,12 +29,13 @@ a fun way to connect with your followers and to seek songs they've interacted wi
     pip install -r requirements.txt
 ```
 7) Change UPDATING_PLAYLIST_ID in python script to match the target playlist id/URI you desire to update
-8) Finally, allow permission to execute and run the bash script! 
+8) Change USERNAME to your Spotify username
+9) Finally, allow permission to execute and run the bash script! 
 ```
     chmod +x run.sh
     ./run.sh
 ```
-9) Deactivate virtual environment:
+10) Deactivate virtual environment:
 ```
     deactivate
 ```
