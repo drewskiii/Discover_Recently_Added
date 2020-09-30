@@ -13,6 +13,7 @@ Note:
 
 SCOPE = 'playlist-modify-public playlist-modify-private playlist-read-private'
 UPDATING_PLAYLIST_ID = "enter_playlist_id_here"
+USERNAME = "enter_username_here"
 DAYS_IN_WEEK = 7
 
 
@@ -35,7 +36,7 @@ class DiscoverRecentlyAdded:
         all_playlists = self.sp.current_user_playlists(limit=50)
         my_playlists = []
         for playlist in all_playlists['items']:
-            if playlist['owner']['display_name'] == 'drewskiii' and not playlist['collaborative'] and playlist['id'] != UPDATING_PLAYLIST_ID:
+            if playlist['owner']['display_name'] == USERNAME and not playlist['collaborative'] and playlist['id'] != UPDATING_PLAYLIST_ID:
                 my_playlists.append(playlist['id'])
                 
 
